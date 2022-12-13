@@ -23,14 +23,14 @@ double[,] FillArray(double[,] arr)
     return arr;
 }
 
-void PrintArray(double[,] ar)
+void PrintArray(double[,] arr2)
 {
     for (int i = 0; i < arr.GetLength(0); i++)
     {
         for (int j = 0; j < arr.GetLength(1); j++)
         {
             int k = new Random().Next(1, 10);
-            Console.Write($"{Math.Round(ar[i, j] / k, 1)} {" | "}  ");
+            Console.Write($"{Math.Round(arr2[i, j] / k, 1)} {" | "}  ");
         }
         Console.WriteLine(" ");
     }
